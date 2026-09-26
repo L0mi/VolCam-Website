@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VolCam — Prove them right</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">Lomi<span>soup</span><small>VOLCAM</small></div>
+  <div class="navlinks">
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+    <a href="#patchnotes">Patch notes</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#privacy">Privacy</a>
+  </div>
+  <a href="assets/apk/VolCamV_1_0.apk" download class="btn ghost" style="padding:10px 18px;font-size:.85rem">Download</a>
+</nav>
+
+<header class="hero">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Prove them<br>right!</h1>
+      <p>Challenge the call with a replay. Mount your phone courtside and catch the moment before the whistle.</p>
+      <div class="cta-row">
+        <a href="assets/apk/VolCamV_1_0.apk" download class="btn">⬇ Download for Android</a>
+        <a href="#features" class="btn ghost">See how it works</a>
+      </div>
+      <div class="apk-note">v.1.0 · Beta · Direct APK · Android only</div>
+    </div>
+    <div class="hero-visual">
+      <img class="phone-shot" src="assets/images/phone-ready.png" alt="VolCam ready to record, courtside">
+    </div>
+  </div>
+</header>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="phone-stack">
+      <img class="phone-shot p1" src="assets/images/phone-recording.png" alt="VolCam recording, rolling buffer active">
+      <img class="phone-shot p2" src="assets/images/phone-replays.png" alt="VolCam saved replays list">
+      <img class="phone-shot p3" src="assets/images/phone-ready.png" alt="VolCam ready to record">
+    </div>
+    <div>
+      <h2>Vol<span class="hl">Cam</span></h2>
+      <p>VolCam turns your phone into a practical volleyball video-challenge camera. Mount it securely near the court, start recording, and save the moments right before a possible violation — no cloud, no upload, just the replay you need.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Key features</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="num">Replay length</div>
+        <h3>5 to 60 seconds</h3>
+        <p>Choose a replay length of 5, 10, 20, 40, or 60 seconds to match the call you're checking.</p>
+      </div>
+      <div class="card">
+        <div class="num">Rolling buffer</div>
+        <h3>Always recording</h3>
+        <p>VolCam keeps a temporary rolling buffer, automatically clearing older footage to control storage use.</p>
+      </div>
+      <div class="card">
+        <div class="num">Save replay</div>
+        <h3>Only what you need</h3>
+        <p>Tap Save Replay and only the selected portion is kept — everything else is discarded.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <div class="download">
+      <img class="download-photo" src="assets/images/court-balls.png" alt="Volleyballs on the court, net in the background">
+      <div class="download-copy">
+        <h2>Download now</h2>
+        <p>Saved replays stay inside the app's Documents folder. Review tools include slow playback, exact frame stepping, scrubbing, pinch zoom, and a yellow drawing overlay to mark the line.</p>
+        <a href="assets/apk/VolCamV_1_0.apk" download class="btn big">⬇ Download (APK)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="patchnotes">
+  <div class="wrap patch">
+    <div class="note">
+      <h3>Patchnotes</h3>
+      <ul>
+        <li>v.1.0 is out for beta testing!</li>
+        <li>Adjustable replay length: 5–60s</li>
+        <li>Rolling buffer recording</li>
+        <li>Save, scrub, zoom &amp; draw on replays</li>
+      </ul>
+      <span class="v">v.1.0</span>
+    </div>
+    <div class="patch-copy">
+      <h2>What's new</h2>
+      <p>VolCam v.1.0 is the first beta build, focused on getting a reliable courtside replay camera into your hands. Expect fast iteration — send feedback below and it goes straight into the next patch.</p>
+    </div>
+  </div>
+</section>
+
+<section id="feedback">
+  <div class="wrap">
+    <div class="feedback">
+      <h2>Feedback</h2>
+      <div class="feedback-grid">
+        <div>
+          <textarea id="fbText" maxlength="500" placeholder="Tell us what's working, what's broken, or what you'd like to see next..."></textarea>
+          <form onsubmit="event.preventDefault();
+            var msg = document.getElementById('fbText').value;
+            var subject = '[VolCam Feedback] v.1.0 Beta';
+            var body = 'Feedback:\n' + msg + '\n\n---\nApp version: v.1.0\nDevice/OS: ';
+            window.location.href='mailto:lomisoupgaming@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);">
+            <button type="submit" class="btn">Send ➤</button>
+          </form>
+        </div>
+        <div class="feedback-copy">
+          <strong>EMAIL</strong>
+          <a href="mailto:lomisoupgaming@gmail.com">lomisoupgaming@gmail.com</a>
+          <p style="margin-top:18px">Beta testing is limited to Android devices with the APK installed manually. Bug reports with your device model help the most.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap privacy">
+    <h2>Privacy notice</h2>
+    <div class="flag">Draft notice — no source text was provided, so this is a starting draft covering VolCam's actual behavior. Have it reviewed before publishing if you need a legally binding version.</div>
+
+    <h3>What VolCam records</h3>
+    <p>VolCam uses your device camera to record video for replay review. Recordings are processed and stored locally on your device, inside the app's own Documents folder.</p>
+
+    <h3>What we collect</h3>
+    <p>VolCam does not upload your recordings, does not require an account, and does not transmit video off your device. No footage is sent to Lomisoup or any third party.</p>
+
+    <h3>Permissions used</h3>
+    <ul>
+      <li>Camera — to record and display the live replay buffer.</li>
+      <li>Storage — to save replays you choose to keep.</li>
+    </ul>
+
+    <h3>Third parties</h3>
+    <p>VolCam does not integrate any analytics, advertising, or third-party tracking SDKs in this beta build.</p>
+
+    <h3>Feedback you send us</h3>
+    <p>If you email feedback or bug reports, we only use it to improve VolCam and will not share it outside Lomisoup.</p>
+
+    <h3>Changes</h3>
+    <p>As VolCam is in active beta, this notice may change between versions. Check this page for the latest copy.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about this notice: <a href="mailto:lomisoupgaming@gmail.com" style="color:var(--orange)">lomisoupgaming@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 Lomisoup — VolCam</span>
+    <div style="display:flex;gap:20px">
+      <a href="#privacy">Privacy notice</a>
+      <a href="mailto:lomisoupgaming@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
